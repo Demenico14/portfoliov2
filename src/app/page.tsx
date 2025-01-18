@@ -4,6 +4,7 @@ import Intro from '@/sections/Intro';
 import Projects from '@/sections/Projects';
 import Offers from '@/sections/Offers';
 import FAQs from '@/sections/FAQs';
+import Footer from '../sections/Footer';
 
 
 export default function Home() {
@@ -15,6 +16,7 @@ export default function Home() {
     <Projects />
     <Offers />
     <FAQs />
+    <Footer />
     </>
   );
 }

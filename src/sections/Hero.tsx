@@ -6,11 +6,12 @@ import Button from "@/components/Button";
 
 const Hero: FC = () => {
   return (
-    <section>
+    <section className="sm:">
       <div className="grid md:grid-cols-12 md:h-screen items-stretch ">
         <div className="md:col-span-7 flex flex-col justify-center">
-          <div className="container !max-w-full">
-            <h1 className="text-5xl md:text-6xl  lg:text-7xlmt-40 md:mt-0">
+          <div className="sm:section container !max-w-full">
+            <h1 className="text-5xl md:text-6xl lg:text-7xl mt-40 md:mt-0">
+            
               Crafting Innovative Websites, Simplifying Hosting, and Empowering
               Your Online Presence
             </h1>
@@ -34,7 +35,7 @@ const Hero: FC = () => {
                   </svg>
                 }
               >
-                <span>View My Work</span>
+                <span>View Our Work</span>
               </Button>
               <Button variant="text">Let&apos;s Talk</Button>
             </div>
