@@ -1,9 +1,8 @@
 import { FC } from "react";
-import image1 from "@/assets/images/project-1.jpg";
+import image1 from "@/assets/images/Portfoliov1.png";
 import image2 from "@/assets/images/project-2.jpg";
-import image3 from "@/assets/images/project-3.jpg";
-import image4 from "@/assets/images/project-4.jpg";
-import image5 from "@/assets/images/project-5.jpg";
+import image3 from "@/assets/images/Lulu.jpeg";
+
 import Image from "next/image";
 
 /* eslint-disable-next-line @typescript-eslint/no-unused-vars */
@@ -24,7 +23,7 @@ const projects = [
 
 const Projects: FC = () => {
   return (
-    <section className="py-24 md:py-32 lg:py-40">
+    <section className="section">
       <div className="container">
         <h2 className="text-4xl md:text-5xl lg:text-6xl  ">Selected Works</h2>
         <div className="mt-10 md:16 lg:mt-20">

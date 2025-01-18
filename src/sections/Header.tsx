@@ -28,7 +28,7 @@ const Header: FC = () => {
         <div className="flex justify-between h-20 items-center">
           <div>
             <a href="/">
-              <span className="text-2xl font-bold uppercase">
+              <span className="text-3xl font-bold uppercase">
                 {" "}
                 M&nbsp;D&nbsp;L
               </span>

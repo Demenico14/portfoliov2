@@ -3,6 +3,7 @@ import Hero from '@/sections/Hero';
 import Intro from '@/sections/Intro';
 import Projects from '@/sections/Projects';
 import Offers from '@/sections/Offers';
+import FAQs from '@/sections/FAQs';
 
 
 export default function Home() {
@@ -13,6 +14,7 @@ export default function Home() {
     <Intro />
     <Projects />
     <Offers />
+    <FAQs />
     </>
   );
 }
