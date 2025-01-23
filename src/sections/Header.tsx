@@ -3,7 +3,6 @@
 import { FC, MouseEvent, useEffect, useState } from "react";
 import Button from "@/components/Button";
 import { motion, useAnimate } from "motion/react";
-import { div } from "motion/react-client";
 
 /* Navigation Items */
 const navItems = [
@@ -57,7 +56,7 @@ const Header: FC = () => {
     navScope,
   ]);
 
-  const handleClickNavItem = (e: MouseEvent<HTMLAnchorElement>) => {
+  const handleClickNavItem = (e:MouseEvent<HTMLAnchorElement>) => {
     e.preventDefault();
     setIsOpen(false);
     const url = new URL(e.currentTarget.href);
@@ -66,8 +65,10 @@ const Header: FC = () => {
 
     if (!target) return;
     target.scrollIntoView({ behavior: "smooth" });
+    
 
-    console.log(hash);
+    console.log(hash); 
+    
   };
 
   return (
@@ -111,13 +112,7 @@ const Header: FC = () => {
       </div>
 
       {/* Header Top Bar */}
-      <div
-        className="fixed top-0 left-0 w-full mix-blend-difference backdrop-blur-md  md:bg-transparent "
-        style={{
-          WebkitBackdropFilter: "blur(8px)", // Safari-specific property
-          backdropFilter: "blur(8px)", // General blur property
-        }}
-      >
+      <div className="fixed top-0 left-0 w-full mix-blend-difference backdrop-blur-md">
         <div className="container !max-w-full">
           <div className="flex justify-between h-20 items-center">
             <a href="/">
@@ -165,9 +160,15 @@ const Header: FC = () => {
                   />
                 </svg>
               </div>
+              <a
+                href="https://wa.me/263711314881"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
               <Button variant="primary" className="hidden md:inline-flex">
                 Contact Me
               </Button>
+              </a>
             </div>
           </div>
         </div>
