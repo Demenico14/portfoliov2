@@ -112,7 +112,7 @@ const Header: FC = () => {
 
       {/* Header Top Bar */}
       <div
-        className="fixed top-0 left-0 w-full mix-blend-difference backdrop-blur-md bg-black/30 md:bg-transparent "
+        className="fixed top-0 left-0 w-full mix-blend-difference backdrop-blur-md  md:bg-transparent "
         style={{
           WebkitBackdropFilter: "blur(8px)", // Safari-specific property
           backdropFilter: "blur(8px)", // General blur property
