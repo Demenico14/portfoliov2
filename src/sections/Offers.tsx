@@ -33,13 +33,13 @@ const Offers: FC = () => {
   const OffersIndex = 0;
 
   return (
-    <section className="section">
+    <section className="section" id="offers">
       <h2 className="text-4xl md:text-7xl lg:text-8xl flex flex-col overflow-hidden">
         <span className="whitespace-nowrap ">
           Our Exclusive Services to Empower Your Online Presence
         </span>
         <span className="whitespace-nowrap self-end text-red-orange-500">
-          What We Offer: Tailored Solutions for Your Unique Needs
+        Our Exclusive Services to Empower Your Online Presence
         </span>
       </h2>
       <div className="container">

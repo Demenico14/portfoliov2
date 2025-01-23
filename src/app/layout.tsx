@@ -2,15 +2,16 @@ import type { Metadata } from "next";
 import { Archivo } from "next/font/google";
 import "./globals.css";
 
-const archivo = Archivo({ 
+const archivo = Archivo({
   display: "swap",
   subsets: ["latin"],
-  weight:"variable",
+  weight: "variable",
   variable: "--font-archivo",
 });
 export const metadata: Metadata = {
-  title: "Mighty Duckworth Labs",
-  description: "Freelance Developer Dominic Mushayi",
+  title: "Morden Digital Labs",
+  description:
+    "Skilled Freelance Developers: Independent professionals offering tailored web solutions, web development, and app creation with a focus on innovation, efficiency, and client satisfaction",
 };
 
 export default function RootLayout({
@@ -20,10 +21,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`antialiased bg-stone-200 text-stone-900 ${archivo.variable} font-sans`}>
+      <body
+        className={`antialiased bg-stone-200 text-stone-900 ${archivo.variable} font-sans`}
+      >
         {children}
       </body>
     </html>
   );
 }
-
