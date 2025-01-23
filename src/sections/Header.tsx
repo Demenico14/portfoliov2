@@ -57,7 +57,7 @@ const Header: FC = () => {
     navScope,
   ]);
 
-  const handleClickNavItem = (e:MouseEvent<HTMLAnchorElement>) => {
+  const handleClickNavItem = (e: MouseEvent<HTMLAnchorElement>) => {
     e.preventDefault();
     setIsOpen(false);
     const url = new URL(e.currentTarget.href);
@@ -66,10 +66,8 @@ const Header: FC = () => {
 
     if (!target) return;
     target.scrollIntoView({ behavior: "smooth" });
-    
 
-    console.log(hash); 
-    
+    console.log(hash);
   };
 
   return (
@@ -113,7 +111,13 @@ const Header: FC = () => {
       </div>
 
       {/* Header Top Bar */}
-      <div className="fixed top-0 left-0 w-full mix-blend-difference backdrop-blur-md">
+      <div
+        className="fixed top-0 left-0 w-full mix-blend-difference backdrop-blur-md bg-black/30 md:bg-transparent "
+        style={{
+          WebkitBackdropFilter: "blur(8px)", // Safari-specific property
+          backdropFilter: "blur(8px)", // General blur property
+        }}
+      >
         <div className="container !max-w-full">
           <div className="flex justify-between h-20 items-center">
             <a href="/">
