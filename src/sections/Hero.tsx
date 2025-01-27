@@ -2,7 +2,7 @@
 
 import { FC, MouseEvent ,useEffect, useRef, useState } from "react";
 /* eslint-disable-next-line @typescript-eslint/no-unused-vars */
-import heroImage from "@/assets/images/logo-color.png";
+import heroImage from "@/assets/images/logo-color.jpg";
 import Image from "next/image";
 import Button from "@/components/Button";
 import {
@@ -159,7 +159,8 @@ const Hero: FC = () => {
             <Image
               src={heroImage}
               alt="hero"
-              className="size-full object-cover"
+              
+              className="size-full object-cover hidden md:block "
             />
           </motion.div>
         </div>

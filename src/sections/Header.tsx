@@ -56,7 +56,7 @@ const Header: FC = () => {
     navScope,
   ]);
 
-  const handleClickNavItem = (e:MouseEvent<HTMLAnchorElement>) => {
+  const handleClickNavItem = (e: MouseEvent<HTMLAnchorElement>) => {
     e.preventDefault();
     setIsOpen(false);
     const url = new URL(e.currentTarget.href);
@@ -65,14 +65,12 @@ const Header: FC = () => {
 
     if (!target) return;
     target.scrollIntoView({ behavior: "smooth" });
-    
 
-    console.log(hash); 
-    
+    console.log(hash);
   };
 
   return (
-    <header>
+    <header className="w-full">
       {/* Navigation Overlay */}
       <div
         className="fixed top-0 left-0 w-full h-0 overflow-hidden bg-stone-900 z-10"
@@ -86,7 +84,7 @@ const Header: FC = () => {
               className="text-stone-200 border-t last:border-b border-stone-800 py-8 group/nav-item relative isolate"
               onClick={handleClickNavItem}
             >
-              <div className="container !max-w-full flex items-center justify-between">
+              <div className="w-full flex items-center justify-between">
                 <span className="text-3xl group-hover/nav-item:pl-4 transition-all duration-500">
                   {label}
                 </span>
@@ -113,8 +111,8 @@ const Header: FC = () => {
 
       {/* Header Top Bar */}
       <div className="fixed top-0 left-0 w-full mix-blend-difference backdrop-blur-md z-10">
-        <div className="container !max-w-full">
-          <div className="flex justify-between h-20 items-center">
+        <div className="w-full">
+          <div className="flex justify-between h-20 items-center px-4">
             <a href="#">
               <span className="text-3xl font-bold uppercase text-white sm:text-white">
                 M&nbsp;D&nbsp;L
@@ -126,8 +124,8 @@ const Header: FC = () => {
 
       {/* Menu Button and Contact Button */}
       <div className="fixed top-0 left-0 w-full z-10">
-        <div className="container !max-w-full">
-          <div className="flex justify-end h-20 items-center">
+        <div className="w-full">
+          <div className="flex justify-end h-20 items-center px-4">
             <div className="flex items-center gap-4">
               <div
                 className="size-11 border border-stone-400 rounded-full inline-flex items-center justify-center bg-stone-200"
@@ -165,9 +163,9 @@ const Header: FC = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-              <Button variant="primary" className="hidden md:inline-flex">
-                Contact Me
-              </Button>
+                <Button variant="primary" className="hidden md:inline-flex">
+                  Contact Me
+                </Button>
               </a>
             </div>
           </div>
