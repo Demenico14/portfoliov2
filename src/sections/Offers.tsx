@@ -1,3 +1,4 @@
+"use client"
 import { FC } from "react";
 import image1 from "@/assets/images/Custom.jpg";
 import image2 from "@/assets/images/Custom2.jpg";

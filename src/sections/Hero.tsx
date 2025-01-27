@@ -2,7 +2,7 @@
 
 import { FC, MouseEvent ,useEffect, useRef, useState } from "react";
 /* eslint-disable-next-line @typescript-eslint/no-unused-vars */
-import heroImage from "@/assets/images/logo-color.jpg";
+import heroImage from "@/assets/images/mdlo.png";
 import Image from "next/image";
 import Button from "@/components/Button";
 import {
