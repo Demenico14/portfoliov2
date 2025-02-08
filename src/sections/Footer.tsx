@@ -3,11 +3,12 @@
 import { FC, MouseEvent, useEffect, useState } from "react";
 import Button from "@/components/Button";
 const navItems = [
+  { label: "Home", href: "#header" },
   { label: "About", href: "#intro" },
-  { label: "Selected Works", href: "#projects" },
   { label: "Offers", href: "#offers" },
   { label: "FAQS", href: "#faqs" },
-  { label: "Contact", href: "#contact" },
+  { label: "Selected Works", href: "#projects" },
+  
 ];
 
 const Footer: FC = () => {

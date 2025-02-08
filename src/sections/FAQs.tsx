@@ -1,22 +1,24 @@
-import { div, section } from "motion/react-client";
-import { FC } from "react";
+"use client";
+import { AnimatePresence, motion } from "motion/react";
+import { FC, useState } from "react";
+import { twMerge } from "tailwind-merge";
 
 /* eslint-disable-next-line @typescript-eslint/no-unused-vars */
 const faqs = [
   {
+    question: "Do you work with clients from different locations?",
+    answer:
+      "Yes, I work with clients globally and can accommodate different time zones for meetings and communication.",
+  },
+  {
+    question: "Do you offer domain registration services?",
+    answer:
+      "Yes, I offer domain registration services as part of the web development process.",
+  },
+  {
     question: "How long does it take to build a website?",
     answer:
       "It depends on the complexity of the website and the scope of the project.",
-  },
-  {
-    question: "What is your development process like?",
-    answer:
-      "I follow a hands-on approach starting with project planning, building out the core features, and regular check-ins to make sure everything matches your needs.",
-  },
-  {
-    question: "Do you work with international clients?",
-    answer:
-      "Yes, I work with clients globally and can accommodate different time zones for meetings and communication.",
   },
   {
     question: "What industries do you specialize in?",
@@ -26,6 +28,8 @@ const faqs = [
 ];
 
 const FAQs: FC = () => {
+  const [selectedIndex, setselectedIndex] = useState<number | null>(null);
+
   return (
     <section className="section" id="faqs">
       <div className="container">
@@ -33,14 +37,23 @@ const FAQs: FC = () => {
           Frequently Asked Questions
         </h2>
         <div className="mt-10 md:mt-16 lg:mt-20">
-          {faqs.map(({ question, answer }) => (
+          {faqs.map(({ question, answer }, faqIndex) => (
             <div
               key={question}
               className="border-t border-stone-400 border-dotted py-6 md:py-8  last:border-b "
+              onClick={() => {
+                if (faqIndex === selectedIndex) {
+                  setselectedIndex(null);
+                } else {
+                  setselectedIndex(faqIndex);
+                }
+              }}
             >
               <div className="flex items-center justify-between  gap-4 ">
-                <div className="text-2xl md:text-2xl lg:text-3xl">{question}</div>
-                <div className="inline-flex  items-center justify-center size-11 border border-stone-400 rounded-full shrink-0">
+                <div className="text-2xl md:text-2xl lg:text-3xl ">
+                  {question}
+                </div>
+                <div className={twMerge("inline-flex  items-center justify-center size-11 border border-stone-400 rounded-full shrink-0 transition duration-300",faqIndex === selectedIndex && "rotate-45")}>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -57,6 +70,19 @@ const FAQs: FC = () => {
                   </svg>
                 </div>
               </div>
+              <AnimatePresence>
+                {faqIndex === selectedIndex && (
+                  <motion.div
+                  className="overflow-hidden"
+                    initial={{ height: 0 }}
+                    animate={{ height: "auto" }}
+                    exit={{ height: 0 }}
+                    transition={{ duration: 0.7, ease:"easeOut" }}
+                  >
+                    <p className="text-xl mt-4 font-mono">{answer}</p>
+                  </motion.div>
+                )}
+              </AnimatePresence>
             </div>
           ))}
         </div>

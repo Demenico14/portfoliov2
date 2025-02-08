@@ -1,6 +1,6 @@
 import { FC } from "react";
 import image1 from "@/assets/images/Portfoliov1.png";
-import image2 from "@/assets/images/project-2.jpg";
+import image2 from "@/assets/images/project-2.png";
 import image3 from "@/assets/images/Lulu.jpeg";
 
 import Image from "next/image";
@@ -13,9 +13,9 @@ const projects = [
     url: "https://dominicmushayi.netlify.app", // Add the URL here
   },
   {
-    name: "Wavelength Studios",
+    name: "QuackSpace Video Conferencing ",
     image: image2,
-    url: "#", // Add the URL here
+    url: "https://quackspace-sigma.vercel.app", // Add the URL here
   },
   {
     name: "Lulu Guest Lodge",
