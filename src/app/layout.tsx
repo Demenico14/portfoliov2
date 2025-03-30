@@ -9,7 +9,8 @@ const archivo = Archivo({
   variable: "--font-archivo",
 });
 export const metadata: Metadata = {
-  title: "Morden Digital Labs",
+  title: "Modern Digital Labs",
+
   description:
     "Skilled Freelance Developers: Independent professionals offering tailored web solutions, web development, and app creation with a focus on innovation, efficiency, and client satisfaction",
 };

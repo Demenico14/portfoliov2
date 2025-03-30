@@ -2,6 +2,7 @@ import { FC } from "react";
 import image1 from "@/assets/images/Portfoliov1.png";
 import image2 from "@/assets/images/project-2.png";
 import image3 from "@/assets/images/Lulu.jpeg";
+import image4 from "@/assets/images/Acme.png";
 
 import Image from "next/image";
 
@@ -21,6 +22,11 @@ const projects = [
     name: "Lulu Guest Lodge",
     image: image3,
     url: "https://www.luluguestlodge.co.zw", // Add the URL here
+  },
+  {
+    name: "Acme",
+    image: image4,
+    url: "https://acme-seven-ebon.vercel.app/", // Add the URL here
   },
 ];
 
