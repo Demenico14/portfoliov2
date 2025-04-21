@@ -14,13 +14,12 @@ import Button from "@/components/Button";
 const offers = [
   {
     title: "Starter Web Design",
-    description: `Up to 1-10 Pages,
+    description: `Up to 1-3 Pages,
 Static Home Page,
 Responsive Design,
 Basic Search Engine Optimization,
-Google Maps Integration,
 Live Chat Integration,
-1 Year Free Web Hosting,
+6 months Free Web Hosting,
 1 Year Free Domain Registration`,
     image: image3,
     imagePositionY: 0.55,
