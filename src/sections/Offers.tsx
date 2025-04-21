@@ -4,7 +4,7 @@ import { FC, useRef, useState } from "react";
 import image1 from "@/assets/images/Custom.jpg";
 import image2 from "@/assets/images/Custom2.jpg";
 import image3 from "@/assets/images/Custom3.jpg";
-import image4 from "@/assets/images/Custom4.jpg";
+import image4 from "@/assets/images/Custom4.jpeg";
 import image5 from "@/assets/images/Custom5.jpg";
 import Image from "next/image";
 import { useScroll, motion, useTransform } from "motion/react";
