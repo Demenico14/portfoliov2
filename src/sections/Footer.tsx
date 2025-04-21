@@ -33,7 +33,6 @@ const Footer: FC = () => {
         <div className="section">
           <div className="flex items-center gap-3">
             <div className="size-3 rounded-full bg-green-400"></div>
-            <span className="uppercase">One Spot Available for next Month</span>
           </div>
           <div className="grid md:grid-cols-3 md:items-center">
             <div className="md:col-span-2">
