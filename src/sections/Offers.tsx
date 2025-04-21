@@ -4,36 +4,82 @@ import { FC, useRef, useState } from "react";
 import image1 from "@/assets/images/Custom.jpg";
 import image2 from "@/assets/images/Custom2.jpg";
 import image3 from "@/assets/images/Custom3.jpg";
+import image4 from "@/assets/images/Custom4.jpg";
+import image5 from "@/assets/images/Custom5.jpg";
 import Image from "next/image";
 import { useScroll, motion, useTransform } from "motion/react";
 import { AnimatePresence } from "framer-motion"; // Import AnimatePresence
 
 const offers = [
   {
-    title: "Custom Web Applications",
-    description:
-      "Build powerful, scalable web applications designed for your business goals.",
+    title: "Starter Web Design",
+    description: `Up to 1-10 Pages
+Static Home Page
+Responsive Design
+Basic Search Engine Optimization
+Google Maps Integration
+Live Chat Integration
+1 Year Free Web Hosting
+1 Year Free Domain Registration`,
     image: image3,
     imagePositionY: 0.55,
-    StartingPrice: "$150",
+    StartingPrice: "$160",
   },
   {
-    title: "E-Commerce Solutions",
-    description:
-      "Launch your online store with seamless shopping and payment features.",
+    title: "Basic Pro Web Design",
+    description: `Up to 1-5 Pages
+Static Home Page
+Responsive Design
+Basic Search Engine Optimization
+Google Maps Integration
+WhatsApp Chat Integration
+1 Year Free Web Hosting
+1 Year Free Domain Registration`,
     image: image2,
     imagePositionY: 0.1,
-    StartingPrice: "$250",
+    StartingPrice: "$300",
   },
   {
     title: "Professional Website Design",
-    description:
-      "Get a stunning, user-friendly website tailored to your brand's needs.",
+    description: `Up to 1-7 Pages
+Static Home page
+Responsive Design
+Basic Search Engine Optimization
+Google Maps Integration
+1 Year Free Web hosting
+1 Year Free Domain Registration`,
+    image: image4,
+    imagePositionY: 0.2,
+    StartingPrice: "$400",
+  },
+  {
+    title: "Enterprise Pro web design",
+    description: `Up to 1-10 Pages
+Static Home Page
+Responsive Design
+Advanced SEO Setup
+Google Maps Integration
+Live Chat Integration
+1 Year Free Web Hosting
+1 Year Free Domain Registration`,
+    image: image5,
+    imagePositionY: 0.2,
+    StartingPrice: "$600",
+  },
+  {
+    title: "Custom Mobile App Development",
+    description: `Beautiful, high-performance Android & iOS apps
+Tailored UI/UX Design
+API Integration
+Push Notifications
+App Store Submission Support
+3 Months Free Maintenance & Updates`,
     image: image1,
     imagePositionY: 0.2,
-    StartingPrice: "$300",
+    StartingPrice: "$1000",
   },
 ];
+
 
 const Offers: FC = () => {
   const titleRef = useRef(null);
