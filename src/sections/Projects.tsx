@@ -26,7 +26,7 @@ const projects = [
   {
     name: "Acme",
     image: image4,
-    url: "https://acme-seven-ebon.vercel.app/", // Add the URL here
+    url: "#", // Add the URL here
   },
 ];
 

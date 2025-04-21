@@ -141,16 +141,17 @@ const Offers: FC = () => {
                   </div>
 
                   <blockquote className="md:col-span-3">
-                    <cite className="mt-4 md:mt-8 lg:text-xl not-italic block md:text-lg">
+                    <cite className="text-3xl md:text-5xl lg:text-6xl mt-8 md:mt-0">
                       {title}
                     </cite>
-                    <div className="text-3xl md:text-5xl lg:text-6xl mt-8 md:mt-0">
+                    <div className="mt-4 md:mt-8 lg:text-xl not-italic block md:text-lg">
                       <span className="text-4xl md:text-5xl mt-8">{description}</span>
                       <div className="mt-4 text-xl text-red-orange-500">{StartingPrice}</div> {/* StartingPrice text with color */}
                     </div>
                   </blockquote>
+                  
                 </motion.div>
-              ) : null
+              ) : null 
             )}
           </AnimatePresence>
         </div>
